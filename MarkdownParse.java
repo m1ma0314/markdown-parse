@@ -12,7 +12,6 @@ public class MarkdownParse {
         int currentIndex = 0;
         while(currentIndex < markdown.length()) {
             int nextOpenBracket = markdown.indexOf("[", currentIndex);
-            
             System.out.println(currentIndex);
             int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);//the second argument is for where to start research, if not provided, search start from index 0
             int openParen = markdown.indexOf("(", nextCloseBracket);
