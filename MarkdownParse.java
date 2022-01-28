@@ -17,7 +17,10 @@ public class MarkdownParse {
             //the second argument is for where to start research, if not provided, search start from index 0
             int openParen = markdown.indexOf("(", nextCloseBracket);
             int closeParen = markdown.indexOf(")", openParen);
-            toReturn.add(markdown.substring(openParen + 1, closeParen));
+            
+            if (nextOpenBracket == 0 || markdown.charAt(nextOpenBracket - 1) != '!'){
+                toReturn.add(markdown.substring(openParen + 1, closeParen));
+            }
             currentIndex = closeParen + 1;
             System.out.println(currentIndex);
         }
