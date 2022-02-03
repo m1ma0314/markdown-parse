@@ -21,6 +21,7 @@ public class MarkdownParse {
             if (nextCloseBracket + 1 == openParen && closeParen-openParen != 1 && (nextOpenBracket == 0 || markdown.charAt(nextOpenBracket - 1) != '!' )){
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
 
+                //condition check added
                 int space = markdown.indexOf(" ", openParen);
                 for(int i = 0; i < closeParen; i++){
                     if(space == i){
