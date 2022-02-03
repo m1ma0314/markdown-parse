@@ -1,7 +1,11 @@
 {
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "/Users/mijia/Desktop/CSE12/hamcrest-core-1.3.jar",
-        "/Users/mijia/Desktop/CSE12/junit-4.13.2.jar"
-    ]
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "/Users/mijia/Desktop/CSE12/junit-4.13.2.jar"
+        ],
+        "exclude": [
+            "lib/junit-4.13.2.jar"
+        ]
+    }
 }
