@@ -23,7 +23,7 @@ public class MarkdownParse {
 
                 //condition check added
                 int space = markdown.indexOf(" ", openParen);
-                for(int i = 1; i < closeParen; i++){
+                for(int i = 0; i < closeParen; i++){
                     if(space == i){
                         toReturn.remove(markdown.substring(openParen + 1, closeParen));
                     }
