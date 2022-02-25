@@ -1,5 +1,5 @@
 
-import static org.junit.Assert.*;
+/*import static org.junit.Assert.*;
 import org.junit.*;
 
 import java.io.IOException;
@@ -56,8 +56,8 @@ public class MarkdownParseTest {
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
     
-}
-/*import static org.junit.Assert.*;
+}*/
+import static org.junit.Assert.*;
 import org.junit.*;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -98,5 +98,5 @@ public class MarkdownParseTest {
         assertEquals(List.of(), MarkdownParse.getLinks(contents));
     }
    
-}*/
+}
 
